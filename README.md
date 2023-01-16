@@ -9,3 +9,9 @@ You need the [MultiSafePay Magento 2](https://github.com/MultiSafepay/Magento2) 
 ```
 composer require rapidez/multisafepay
 ```
+
+And import the JS into your `resources/js/app.js`:
+
+```
+import 'Vendor/rapidez/multisafepay/resources/js/multisafepay.js';
+```
