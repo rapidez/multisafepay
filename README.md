@@ -15,3 +15,18 @@ And import the JS into your `resources/js/app.js`:
 ```
 import 'Vendor/rapidez/multisafepay/resources/js/multisafepay.js';
 ```
+
+Then, in your magento -> configuration -> multisafepay -> general settings, enable custom return urls for PWA and use the following return URLs:
+
+```
+[your base rapidez url]/msp-return/cancel?quoteId={{quote.masked_id}}
+[your base rapidez url]/msp-return/success?secureToken={{secure_token}}&orderId={{order.increment_id}}&paymentCode={{payment.code}}
+```
+
+## Views
+
+You can publish the views with the following command:
+
+```
+php artisan vendor:publish --provider="Rapidez\MultiSafePay\MultiSafePayServiceProvider" --tag=views
+```
