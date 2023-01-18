@@ -11,6 +11,7 @@ Route::middleware('web')->group(function () {
             'increment_id' => $request->get('orderId'),
             'payment_method' => $request->get('paymentCode'),
         ];
+
         return view('multisafepay::success', ['t_order' => $order]);
     })->name('multisafepay.success');
     Route::get('/msp-return/cancel', function(Request $request) {
