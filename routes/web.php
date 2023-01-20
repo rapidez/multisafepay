@@ -9,6 +9,7 @@ Route::middleware('web')->group(function () {
     Route::get('/msp-return/success', function(Request $request) {
         $order = (object)[
             'increment_id' => $request->get('orderId'),
+            'secure_token' => $request->get('secureToken'),
             'payment_method' => $request->get('paymentCode'),
         ];
 
