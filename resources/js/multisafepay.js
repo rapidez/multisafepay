@@ -11,7 +11,7 @@ document.addEventListener('turbolinks:load', () => {
         let headers = { Authorization: `Bearer ${localStorage.token}` }
 
         let cart = window.app.user ? 'mine' : localStorage.mask;
-        magento.get('/multisafepay/' + cart + '/payment-url/' + data.order.id, { headers: headers }).then(response => {
+        magento.get(`/multisafepay/${cart}/payment-url/${data.order.id}`, { headers: headers }).then(response => {
             window.location.replace(response.data);
         });
     });
