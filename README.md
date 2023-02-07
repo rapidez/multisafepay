@@ -23,6 +23,17 @@ Then, in your magento -> configuration -> multisafepay -> general settings, enab
 [your base rapidez url]/msp-return/success?secureToken={{secure_token}}&orderId={{order.increment_id}}&paymentCode={{payment.code}}
 ```
 
+Finally, note that MultiSafePay needs these magento URLs to work:
+
+```
+[your base magento url]/multisafepay/connect/success?[...]
+[your base magento url]/multisafepay/connect/cancel?[...]
+[your base magento url]/multisafepay/connect/notification?[...]
+```
+
+You will have to update your deployment to open up these specific URLs (i.e. to not redirect these to your rapidez frontend).  
+For example, for a standard rapidez installation you can update the regex as seen in the [Rapidez docs deployment page](https://docs.rapidez.io/0.x/deployment.html#redirecting-magento-to-rapidez) to include `multisafepay`.
+
 ## Views
 
 You can publish the views with the following command:

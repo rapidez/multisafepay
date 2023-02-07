@@ -7,11 +7,8 @@ document.addEventListener('turbo:load', () => {
             return;
         }
         window.app.checkout.doNotGoToTheNextStep = true
-
-        let headers = { Authorization: `Bearer ${localStorage.token}` }
-
         let cart = window.app.user ? 'mine' : localStorage.mask;
-        magento.get(`/multisafepay/${cart}/payment-url/${data.order.id}`, { headers: headers }).then(response => {
+        magentoUser.get(`/multisafepay/${cart}/payment-url/${data.order.id}`).then(response => {
             window.location.replace(response.data);
         });
     });
