@@ -25,7 +25,7 @@
         methods: {
             async checkStatus() {
                 magento.get(`/multisafepay/orders/${this.order.increment_id}/${this.order.secure_token}`).then(response => {
-                    if(response.data?.status == "complete") {
+                    if(['processing', 'success'].includes(response.data?.status)) {
                         this.completed = true;
                     } else {
                         window.setTimeout(this.checkStatus, 2000);
