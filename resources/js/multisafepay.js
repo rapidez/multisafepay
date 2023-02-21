@@ -8,8 +8,17 @@ document.addEventListener('turbo:load', () => {
         }
         window.app.checkout.doNotGoToTheNextStep = true
         let cart = window.app.user ? 'mine' : localStorage.mask;
-        magentoUser.get(`/multisafepay/${cart}/payment-url/${data.order.id}`).then(response => {
-            window.location.replace(response.data);
-        });
+
+        let waitForURL = function(cartId, orderId) {
+            magentoUser.get(`/multisafepay/${cartId}/payment-url/${orderId}`).then(response => {
+                if(response.data) {
+                    window.location.replace(response.data);
+                } else {
+                    window.setTimeout(() => waitForURL(cartId, orderId), 1000);
+                }
+            });
+        }
+
+        waitForURL(cart, data.order.id);
     });
 })
