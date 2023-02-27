@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container">
-        <msp-pending :order='@json($t_order)' v-cloak>
+        <msp-pending v-cloak>
             <div slot-scope="{ completed, order }">
                 <div v-if="completed">
                     @include('rapidez::checkout.steps.success')
