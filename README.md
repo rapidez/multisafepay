@@ -45,3 +45,9 @@ You can publish the views with the following command:
 ```
 php artisan vendor:publish --provider="Rapidez\MultiSafePay\MultiSafePayServiceProvider" --tag=views
 ```
+
+## Development note
+
+When you're developing using the MultiSafePay API in testing environments, you might run into the issue that the API returns an empty payment URL. This happens when you try to make an order with an Order ID that already exists in your MultiSafePay testmerchant account, which is common if you use the same site ID on different environments.
+
+To avoid this issue, make sure that every individual environment has its own individual site in your testmerchant account.
