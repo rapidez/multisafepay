@@ -14,11 +14,6 @@ The magento2 core package from MultiSafePay currently contains a bug that preven
 composer require rapidez/multisafepay
 ```
 
-Make sure this exists in your `app.js`:
-```js
-import.meta.glob(['Vendor/rapidez/*/resources/js/app.js'], { eager: true });
-```
-
 Then, in your magento -> configuration -> multisafepay -> general settings, enable custom return urls for PWA and use the following return URLs:
 
 ```
