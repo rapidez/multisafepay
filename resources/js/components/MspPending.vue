@@ -1,12 +1,9 @@
 <script>
     export default {
-        props: {
-            order: Object
-        },
-
         data() {
             return {
                 completed: false,
+                order: {},
             }
         },
 
@@ -24,9 +21,22 @@
 
         methods: {
             async checkStatus() {
-                magento.get(`/multisafepay/orders/${this.order.increment_id}/${this.order.secure_token}`).then(response => {
+                this.params = Object.fromEntries(new URLSearchParams(window.location.search).entries());
+                let token = this.params.secureToken ?? null;
+                let orderId = this.params.orderId ?? null;
+                if(!token || !orderId) {
+                    return;
+                }
+
+                magento.get(`/multisafepay/orders/${orderId}/${token}`).then(response => {
                     if(['processing', 'success'].includes(response.data?.status)) {
                         this.completed = true;
+                        this.order = {
+                            increment_id: orderId,
+                            payment_method: response.data.payment.method,
+                            shipping_method: response.data.shipping_description,
+                            email: response.data.customer_email,
+                        }
                     } else {
                         window.setTimeout(this.checkStatus, 2000);
                     }
