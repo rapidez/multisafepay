@@ -10,14 +10,8 @@ The magento2 core package from MultiSafePay currently contains a bug that preven
 
 ## Installation
 
-```
+```bash
 composer require rapidez/multisafepay
-```
-
-And import the JS into your `resources/js/app.js`:
-
-```
-import 'Vendor/rapidez/multisafepay/resources/js/multisafepay.js';
 ```
 
 Then, in your magento -> configuration -> multisafepay -> general settings, enable custom return urls for PWA and use the following return URLs:
