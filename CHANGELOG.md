@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.3.0...master)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.3.1...master)
+## [0.3.1](https://github.com/rapidez/multisafepay/releases/tag/0.3.1) - 2023-08-08
+
+### Fixed
+
+- Rapidez v1 compatibility (#7)
+
 ## [0.3.0](https://github.com/rapidez/multisafepay/releases/tag/0.3.0) - 2023-08-04
 
 ### Added
