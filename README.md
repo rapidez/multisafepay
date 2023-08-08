@@ -4,10 +4,6 @@
 
 You need the [MultiSafePay Magento 2](https://github.com/MultiSafepay/Magento2) and [MultiSafePay Magento 2 GraphQL](https://github.com/MultiSafepay/magento2-graphql) modules installed in your Magento 2 installation.
 
-### Temporary notice
-
-The magento2 core package from MultiSafePay currently contains a bug that prevents guest checkout from working. You can use [version 2.19.1 from this fork](https://github.com/Jade-GG/magento2-core) until the PR fixing this has been merged into the official repository.
-
 ## Installation
 
 ```bash
