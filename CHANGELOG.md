@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.3.1...master)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.4.0...master)
+## [0.4.0](https://github.com/rapidez/multisafepay/releases/tag/0.4.0) - 2023-10-12
+
+### Added
+
+- Laravel 10 support (#9)
+
 ## [0.3.1](https://github.com/rapidez/multisafepay/releases/tag/0.3.1) - 2023-08-08
 
 ### Fixed
