@@ -1,6 +1,18 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.4.0...master)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.5.0...master)
+## [0.5.0](https://github.com/rapidez/multisafepay/releases/tag/0.5.0) - 2023-10-20
+
+### Fixed
+
+- Rapidez v1 checkout-success order data compatibility (#11)
+
+## [0.4.1](https://github.com/rapidez/multisafepay/releases/tag/0.4.1) - 2023-10-20
+
+### Fixed
+
+- Also complete on 'complete' status (#10)
+
 ## [0.4.0](https://github.com/rapidez/multisafepay/releases/tag/0.4.0) - 2023-10-12
 
 ### Added
