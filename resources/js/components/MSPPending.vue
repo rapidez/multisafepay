@@ -29,7 +29,7 @@
                 }
 
                 magento.get(`/multisafepay/orders/${orderId}/${token}`).then(response => {
-                    if(['processing', 'success'].includes(response.data?.status)) {
+                    if(['processing', 'success', 'complete'].includes(response.data?.status)) {
                         this.completed = true;
                         this.order = {
                             increment_id: orderId,
