@@ -31,12 +31,10 @@
                 magento.get(`/multisafepay/orders/${orderId}/${token}`).then(response => {
                     if(['processing', 'success', 'complete'].includes(response.data?.status)) {
                         this.completed = true;
-                        this.order = {
-                            increment_id: orderId,
-                            payment_method: response.data.payment.method,
-                            shipping_method: response.data.shipping_description,
-                            email: response.data.customer_email,
-                        }
+                        this.order = Object.assign({
+                            sales_order_items: response.data.items,
+                            sales_order_payments: [response.payment],
+                        }, response.data)
                     } else {
                         window.setTimeout(this.checkStatus, 2000);
                     }
