@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.5.0...master)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.6.0...master)
+## [0.6.0](https://github.com/rapidez/multisafepay/releases/tag/0.6.0) - 2023-11-07
+
+### Changed
+
+- Set token and mask again when showing checkout success (#12)
+
 ## [0.5.0](https://github.com/rapidez/multisafepay/releases/tag/0.5.0) - 2023-10-20
 
 ### Fixed
