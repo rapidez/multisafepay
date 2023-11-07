@@ -1,5 +1,19 @@
 <script>
+    import { mask as useMask } from 'Vendor/rapidez/core/resources/js/stores/useMask'
+    import { token as useToken } from 'Vendor/rapidez/core/resources/js/stores/useUser'
+
     export default {
+        props: {
+            token: {
+                type: String,
+                default: useToken.value,
+            },
+            mask: {
+                type: String,
+                default: useMask.value,
+            },
+        },
+
         data() {
             return {
                 completed: false,
@@ -30,6 +44,9 @@
 
                 magento.get(`/multisafepay/orders/${orderId}/${token}`).then(response => {
                     if(['processing', 'success', 'complete'].includes(response.data?.status)) {
+                        useToken.value = this.token;
+                        useMask.value = this.mask;
+
                         this.completed = true;
                         this.order = Object.assign({
                             sales_order_items: response.data.items,
