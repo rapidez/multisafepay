@@ -28,8 +28,6 @@
 
         render() {
             return this.$scopedSlots.default({
-                token: this.token,
-                mask: this.mask,
                 completed: this.completed,
                 order: this.order
             })
@@ -48,7 +46,7 @@
                     if(['processing', 'success', 'complete'].includes(response.data?.status)) {
                         useToken.value = this.token;
                         useMask.value = this.mask;
-                        
+
                         this.completed = true;
                         this.order = Object.assign({
                             sales_order_items: response.data.items,
