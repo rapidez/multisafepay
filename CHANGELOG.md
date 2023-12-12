@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.6.0...master)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.7.0...master)
+## [0.7.0](https://github.com/rapidez/multisafepay/releases/tag/0.7.0) - 2023-12-12
+
+### Added
+
+- Payment icons (#13)
+
 ## [0.6.0](https://github.com/rapidez/multisafepay/releases/tag/0.6.0) - 2023-11-07
 
 ### Changed
