@@ -42,16 +42,16 @@
                     return;
                 }
 
-                magento.get(`/multisafepay/orders/${orderId}/${token}`).then(response => {
-                    if(['processing', 'success', 'complete'].includes(response.data?.status)) {
+                magentoAPI('get', `/multisafepay/orders/${orderId}/${token}`).then(response => {
+                    if(['processing', 'success', 'complete'].includes(response?.status)) {
                         useToken.value = this.token;
                         useMask.value = this.mask;
 
                         this.completed = true;
                         this.order = Object.assign({
-                            sales_order_items: response.data.items,
+                            sales_order_items: response.items,
                             sales_order_payments: [response.payment],
-                        }, response.data)
+                        }, response)
                     } else {
                         window.setTimeout(this.checkStatus, 2000);
                     }

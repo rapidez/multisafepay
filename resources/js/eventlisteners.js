@@ -5,8 +5,8 @@ document.addEventListener('turbo:load', () => {
         }
         window.app.checkout.doNotGoToTheNextStep = true
         let cart = window.app.user?.id ? 'mine' : localStorage.mask;
-        magentoUser.get(`/multisafepay/${cart}/payment-url/${data.order.id}`).then(response => {
-            window.location.replace(response.data);
+        window.magentoAPI('get', `multisafepay/${cart}/payment-url/${data.order.id}`).then(response => {
+            window.location.replace(response);
         });
     });
 })
