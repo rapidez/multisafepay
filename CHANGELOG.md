@@ -1,6 +1,16 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/0.7.0...master)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/1.0.0...master)
+## [1.0.0](https://github.com/rapidez/multisafepay/releases/tag/1.0.0) - 2024-03-05
+
+### Added
+
+- Rapidez v2 support (#15)
+
+### Fixed
+
+- Fix iDeal icon (#14)
+
 ## [0.7.0](https://github.com/rapidez/multisafepay/releases/tag/0.7.0) - 2023-12-12
 
 ### Added
