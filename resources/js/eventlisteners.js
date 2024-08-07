@@ -1,12 +1,5 @@
-document.addEventListener('turbo:load', () => {
-    window.app.$on('checkout-payment-saved', (data) => {
-        if (!data.order.payment_method_code.includes('multisafepay_')) {
-            return;
-        }
-        window.app.checkout.doNotGoToTheNextStep = true
-        let cart = window.app.user?.id ? 'mine' : localStorage.mask;
-        window.magentoAPI('get', `multisafepay/${cart}/payment-url/${data.order.id}`).then(response => {
-            window.location.replace(response);
-        });
-    });
-})
+import { addAfterPlaceOrderHandler } from 'Vendor/rapidez/core/resources/js/stores/usePaymentHandlers'
+
+addAfterPlaceOrderHandler(async function (response, mutationComponent) {
+    mutationComponent.redirect = response?.data?.placeOrder?.orderV2.multisafepay_payment_url || mutationComponent.redirect;
+});
