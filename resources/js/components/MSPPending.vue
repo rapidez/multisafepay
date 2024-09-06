@@ -42,7 +42,7 @@
                     return;
                 }
 
-                window.magentoAPI('get', `/multisafepay/orders/${orderId}/${token}`).then(response => {
+                window.magentoAPI('get', `multisafepay/orders/${orderId}/${token}`).then(response => {
                     if(['processing', 'success', 'complete'].includes(response?.status)) {
                         useToken.value = this.token;
                         useMask.value = this.mask;
