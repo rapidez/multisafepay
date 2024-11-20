@@ -1,6 +1,18 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/1.0.0...master)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/2.0.1...2.0.1)
+## [2.0.1](https://github.com/rapidez/multisafepay/releases/tag/2.0.1) - 2024-09-06
+
+### Fixed
+
+- Remove extra slash in the url (#18)
+
+## [2.0.0](https://github.com/rapidez/multisafepay/releases/tag/2.0.0) - 2024-08-22
+
+### Added
+
+- Laravel 11 support (#17)
+
 ## [1.0.0](https://github.com/rapidez/multisafepay/releases/tag/1.0.0) - 2024-03-05
 
 ### Added
