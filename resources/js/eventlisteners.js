@@ -1,4 +1,4 @@
-document.addEventListener('turbo:load', () => {
+document.addEventListener('vue:loaded', () => {
     window.app.$on('checkout-payment-saved', (data) => {
         if (!data.order.payment_method_code.includes('multisafepay_')) {
             return;
