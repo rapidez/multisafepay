@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/2.0.2...2.0.2)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/3.0.0...3.0.0)
+## [3.0.0](https://github.com/rapidez/multisafepay/releases/tag/3.0.0) - 2024-12-13
+
+### Added
+
+- Rapidez v3 support (#16)
+
 ## [2.0.2](https://github.com/rapidez/multisafepay/releases/tag/2.0.2) - 2024-11-29
 
 ### Fixed
