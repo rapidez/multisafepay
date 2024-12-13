@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/2.0.1...2.0.1)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/2.0.2...2.0.2)
+## [2.0.2](https://github.com/rapidez/multisafepay/releases/tag/2.0.2) - 2024-11-29
+
+### Fixed
+
+- Listen to vue:loaded (#19)
+
 ## [2.0.1](https://github.com/rapidez/multisafepay/releases/tag/2.0.1) - 2024-09-06
 
 ### Fixed
