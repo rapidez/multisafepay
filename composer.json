@@ -16,7 +16,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.0",
-        "rapidez/core": "^3.0"
+        "rapidez/core": "^4.0"
     },
     "config": {
         "sort-packages": true
