@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/4.0.0...4.0.0)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/4.0.1...4.0.1)
+## [4.0.1](https://github.com/rapidez/multisafepay/releases/tag/4.0.1) - 2025-07-30
+
+### Fixed
+
+- Remove views that don't exist (#20)
+
 ## [4.0.0](https://github.com/rapidez/multisafepay/releases/tag/4.0.0) - 2025-06-05
 
 ### Added
