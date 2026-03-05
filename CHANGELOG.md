@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/2.0.2...2.0.2)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/...2.0.3)
+## [2.0.3](https://github.com/rapidez/multisafepay/releases/tag/2.0.3) - 2026-02-13
+
+### Fixed
+
+- Update Ideal logo to Ideal-wero logo (#24)
+
 ## [2.0.2](https://github.com/rapidez/multisafepay/releases/tag/2.0.2) - 2024-11-29
 
 ### Fixed
