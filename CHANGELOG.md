@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/...2.0.3)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/2.1.0...2.1.0)
+## [2.1.0](https://github.com/rapidez/multisafepay/releases/tag/2.1.0) - 2026-03-10
+
+### Changed
+
+- Proxy notification url instead of redirecting (#29)
+
 ## [2.0.3](https://github.com/rapidez/multisafepay/releases/tag/2.0.3) - 2026-02-13
 
 ### Fixed
