@@ -1,6 +1,21 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/4.0.1...4.0.1)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/5.0.0...5.0.0)
+## [5.0.0](https://github.com/rapidez/multisafepay/releases/tag/5.0.0) - 2026-03-10
+
+### Added
+
+- Rapidez v5 support (#21)
+
+### Changed
+
+- Proxy notification url instead of redirecting (#26)
+
+### Fixed
+
+- Redirect url fix (#22)
+- Update ideal logo to ideal-wero logo (#23)
+
 ## [4.0.1](https://github.com/rapidez/multisafepay/releases/tag/4.0.1) - 2025-07-30
 
 ### Fixed
