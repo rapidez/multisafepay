@@ -12,7 +12,7 @@ Route::middleware('web')->group(function () {
     Route::get('/msp-return/cancel', function(Request $request) {
         config('rapidez.models.quote')::query()
             ->withoutGlobalScopes()
-            ->whereQuoteIdOrCustomerToken($request->input('quoteId'))
+            ->whereQuoteIdOrCustomerToken($request->input('quoteId', ''))
             ->update(['is_active' => 1]);
 
         return redirect('cart');
