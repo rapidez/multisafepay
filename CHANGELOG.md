@@ -1,6 +1,13 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/5.0.0...5.0.0)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/5.0.1...5.0.1)
+## [5.0.1](https://github.com/rapidez/multisafepay/releases/tag/5.0.1) - 2026-07-28
+
+### Fixed
+
+- Fix error on null id (#30)
+- Empty quoteId error fix (#33)
+
 ## [5.0.0](https://github.com/rapidez/multisafepay/releases/tag/5.0.0) - 2026-03-10
 
 ### Added
