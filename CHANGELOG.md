@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/2.1.0...2.1.0)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/2.2.0...2.2.0)
+## [2.2.0](https://github.com/rapidez/multisafepay/releases/tag/2.2.0) - 2026-08-05
+
+### Added
+
+- Laravel 12 support (#34)
+
 ## [2.1.0](https://github.com/rapidez/multisafepay/releases/tag/2.1.0) - 2026-03-10
 
 ### Changed
