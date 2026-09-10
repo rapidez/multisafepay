@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/multisafepay/compare/4.1.0...4.1.0)
+[Unreleased changes](https://github.com/rapidez/multisafepay/compare/4.1.1...4.1.1)
+## [4.1.1](https://github.com/rapidez/multisafepay/releases/tag/4.1.1) - 2026-09-10
+
+### Fixed
+
+- Fix error on null id (#31)
+
 ## [4.1.0](https://github.com/rapidez/multisafepay/releases/tag/4.1.0) - 2026-03-10
 
 ### Changed
